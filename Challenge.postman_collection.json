@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "1d031a3e-e0fd-41aa-b152-5e3d37fed460",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:18080/v1/accounts",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAccountId\": \"Id-111\",\r\n    \"toAccountId\": \"Id-222\",\r\n    \"amount\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:18080/v1/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"v1",
+						"accounts"
+					]
+				},
+				"description": "This Api transfers money from one valid account to another valid account"
+			},
+			"response": []
+		}
+	]
+}
